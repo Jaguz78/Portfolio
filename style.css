@@ -1,0 +1,147 @@
+:root{
+    --white: #fff;
+    --black: #353535;
+    --lg: 2rem;
+    --md: 1.6rem;
+    --sm: 1.1rem;
+    --paragraph: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 62.5%;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+    background-image: url(./img/space.jpg);
+    background-attachment: fixed;
+    position: relative;
+}
+.yo{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 40px;
+    color: var(--white);
+    margin-top: 150px;
+}
+.name h1{
+    font-family: 'Lilita One', cursive;
+    font-weight: 300;
+    font-size: var(--lg);
+}
+.name h2{
+    font-family: var(--paragraph);
+    font-weight: 400;
+    font-size: var(--md);
+    margin-top: 4px;
+    color: var(--white);
+}
+.about{
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+h2{
+    font-size: var(--md);
+    font-family: 'Lilita One', cursive;
+    font-weight: 500;
+    color: var(--black);
+    margin-bottom: 16px;
+}
+p{
+    font-size: var(--sm);
+    font-weight: 500;
+    color: var(--black);
+    font-family: var(--paragraph);
+}
+.about-container{
+    width: 90%;
+    margin: 0 auto;
+}
+img{
+    width: 120px;
+}
+.skills{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.skills-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+figure{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+figcaption{
+    font-size: var(--sm);
+    font-weight: 500;
+    color: var(--black);
+    font-family: var(--paragraph);
+    position: absolute;
+    bottom: 0;
+}
+.certificates{
+    width: 100%;
+    height: 50vh;
+    background-color: #001233;
+    padding-top: 20px;
+    text-align: center;
+}
+.certificates h2{
+    font-size: var(--md);
+    font-family: 'Lilita One', cursive;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 16px;
+}
+.carousel{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel i{
+    font-size: var(--md);
+    color: var(--white);
+}
+.carousel i:first-child{
+    transform: rotate(180deg);
+}
+.certificates-container{
+    width: 300px;
+    height: auto;
+    display: flex;
+    overflow-x:scroll;
+    margin: 0 8px;
+}
+.certificates-container img{
+    width: 100%;
+    height: 100%;
+    margin-right: 24px;
+}
+
