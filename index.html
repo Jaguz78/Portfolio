@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
     <script src="https://kit.fontawesome.com/7e4b9a865e.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -66,13 +67,24 @@
     <section class="certificates">
         <h2>Certificates</h2>
         <div class="carousel">
-            <i class="fas fa-chevron-right"></i>
+            <button aria-label="Anterior" class="anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
             <div class="certificates-container">
-                <img src="./certificates/diploma-backend-nodejs.png" alt="">
-                <img src="./certificates/diploma-asincronismo-js.png" alt="">
+                <img src="./certificates/diploma-backend-nodejs.png" alt="Backend con node.js">
+                <img src="./certificates/diploma-asincronismo-js.png" alt="Asincronismo con JavaScript">
+                <img src="./certificates/diploma-backend-nodejs.png" alt="Backend con node.js">
+                <img src="./certificates/diploma-asincronismo-js.png" alt="Asincronismo con JavaScript">
             </div>
-            <i class="fas fa-chevron-right"></i>
+
+            <button aria-label="Siguiente" class="siguiente">
+                <i class="fas fa-chevron-right"></i>
+            </button>
         </div>
+        <div role="tablist" class="indicadores"></div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>

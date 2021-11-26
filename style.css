@@ -107,7 +107,7 @@ figcaption{
 }
 .certificates{
     width: 100%;
-    height: 50vh;
+    height: 55vh;
     background-color: #001233;
     padding-top: 20px;
     text-align: center;
@@ -129,19 +129,9 @@ figcaption{
     font-size: var(--md);
     color: var(--white);
 }
-.carousel i:first-child{
-    transform: rotate(180deg);
-}
-.certificates-container{
-    width: 300px;
-    height: auto;
-    display: flex;
-    overflow-x:scroll;
-    margin: 0 8px;
-}
-.certificates-container img{
-    width: 100%;
-    height: 100%;
-    margin-right: 24px;
+.anterior, .siguiente{
+    background: none;
+    border: none;
+    opacity: 0.4;
 }
 
