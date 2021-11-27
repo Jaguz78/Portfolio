@@ -79,9 +79,9 @@ img{
 }
 .skills{
     width: 100%;
-    height: 100vh;
+    height: auto;
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 40px;
 }
 .skills-container{
     width: 100%;
@@ -107,7 +107,7 @@ figcaption{
 }
 .certificates{
     width: 100%;
-    height: 55vh;
+    height: 60  vh;
     background-color: #001233;
     padding-top: 20px;
     text-align: center;
@@ -124,6 +124,7 @@ figcaption{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 4px;
 }
 .carousel i{
     font-size: var(--md);
@@ -134,4 +135,13 @@ figcaption{
     border: none;
     opacity: 0.4;
 }
-
+.anterior:hover, .siguiente:hover{
+    opacity: 1;
+}
+.certificates-container{
+    overflow-x: hidden;
+    width: 90%;
+}
+.certificates-container img{
+    padding: 0 4px;
+}
