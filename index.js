@@ -6,6 +6,7 @@ window.addEventListener('load', () => {
         scrollLock: true,
         dots: '.indicadores',
         perView: 2,
+        draggable: true,
         arrows: {
             prev: '.anterior',
             next: '.siguiente'
