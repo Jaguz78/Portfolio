@@ -42,12 +42,13 @@ body{
     position: absolute;
     top: calc(25%);
 }
-.name h1{
+.name h2{
     font-family: 'Lilita One', cursive;
     font-weight: 300;
     font-size: var(--lg);
+    color: var(--white);
 }
-.name h2{
+.name h3{
     font-family: var(--paragraph);
     font-weight: 400;
     font-size: var(--md);
@@ -159,7 +160,6 @@ figcaption{
     padding: 40px 4px;
 }
 .proyects-container{
-    width: 90%;
     height: auto;
     display: grid;
     grid-template-columns: 1fr;
