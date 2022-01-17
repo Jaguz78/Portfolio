@@ -1,0 +1,23 @@
+.hero{
+    height: 100vh;
+}
+.skills{
+    margin-bottom: 120px;
+}
+.skills-container{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    margin: auto;
+}
+.skills-container figure{
+    margin-top: 24px;
+}
+.certificates{
+    margin-bottom: 80px;
+}
+.proyects-container{
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+}

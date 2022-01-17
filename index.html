@@ -8,7 +8,8 @@
     <meta name="author" content="José Alejandro Guzmán Heinemann">
     <meta name="description" content="Web Developer Portfolio">
     <meta name="keywords" content="portfolio, html, css, javascript, developer, web">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" media="(min-width: 800px)" href="./css/desktop.css">
     <link rel="shortcut icon" href="./img/faviconNero.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +20,7 @@
     <script src="https://kit.fontawesome.com/7e4b9a865e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section class="hero">
+    <section class="hero" id="particles-js">
         <div class="name">
             <h1>Hello, I'm <br> Alejandro Guzmán</h1>
             <h2>Web Developer</h2>
@@ -29,7 +30,9 @@
     <section class="about">
         <h2>About me</h2>
         <div class="about-container">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti reiciendis autem fugiat totam obcaecati delectus, distinctio eligendi, sequi velit minima exercitationem, labore dolores vitae sint!</p>
+            <p>I am a student at the University of San Carlos de Guatemala, and a student at Platzi. <br>
+                <br>Since I was little I have liked board games and puzzles, which has made programming fun for me.
+                I am currently learning web development, you can see the projects I developed below.</p>
         </div>
     </section>
     <section class="skills">
@@ -79,12 +82,12 @@
             <div class="certificates-container">
                 <img src="./certificates/diploma-backend-nodejs.png" alt="Backend con node.js">
                 <img src="./certificates/diploma-asincronismo-js.png" alt="Asincronismo con JavaScript">
-                <img src="./certificates/diploma-backend-nodejs.png" alt="Backend con node.js">
-                <img src="./certificates/diploma-asincronismo-js.png" alt="Asincronismo con JavaScript">
-                <img src="./certificates/diploma-backend-nodejs.png" alt="Backend con node.js">
-                <img src="./certificates/diploma-asincronismo-js.png" alt="Asincronismo con JavaScript">
-                <img src="./certificates/diploma-backend-nodejs.png" alt="Backend con node.js">
-                <img src="./certificates/diploma-asincronismo-js.png" alt="Asincronismo con JavaScript">
+                <img src="./certificates/diploma-bd.jpg" alt="Backend con node.js">
+                <img src="./certificates/diploma-ecmascript-6.jpg" alt="Asincronismo con JavaScript">
+                <img src="./certificates/diploma-git-github.jpg" alt="Backend con node.js">
+                <img src="./certificates/diploma-mobile-first.jpg" alt="Asincronismo con JavaScript">
+                <img src="./certificates/diploma-npm.jpg" alt="Backend con node.js">
+                <img src="./certificates/diploma-terminal.jpg" alt="Asincronismo con JavaScript">
             </div>
 
             <button aria-label="Siguiente" class="siguiente">
@@ -96,37 +99,61 @@
     <section class="proyects">
         <h2>Proyects</h2>
         <div class="proyects-container">
-            <div class="proyect-element" id="commerce">
-                <img src="./proyects/platziCommerce.png" alt="platziCommerce">
-            </div>
-            <div class="proyect-element" id="batata">
-                <img src="./proyects/batata.svg" alt="batatabit">
-            </div>
-            <div class="proyect-element" id="colorChange">
-                <h2>Color Change</h2>
-            </div>
-            <div class="proyect-element" id="platziVideo">
+            <a href="https://jaguz78.github.io/E-commerce/login.html">
+                <div class="proyect-element" id="commerce">
+                    <img src="./proyects/platziCommerce.png" alt="platziCommerce">
+                </div>
+            </a>
+            <a href="https://jaguz78.github.io/Curso-Mobile-First">
+                <div class="proyect-element" id="batata">
+                    <img src="./proyects/batata.svg" alt="batatabit">
+                </div>
+            </a>
+            <a href="https://jaguz78.github.io/Color-Change/">
+                <div class="proyect-element" id="colorChange">
+                    <h2>Color Change</h2>
+                </div>
+            </a>
+            <!-- <div class="proyect-element" id="platziVideo">
                 <div class="superior">
                     <img src="./proyects/platziVideo.png" alt="logo PlatziVideo">
                 </div>
                 <div class="inferior"></div>
-            </div>
-            <div class="proyect-element" id="simon">
-                <h2>Simon</h2>
-                <div id="one"></div>
-                <div id="two"></div>
-                <div id="three"></div>
-                <div id="four"></div>
-            </div>
-            <div class="proyect-element" id="paint">
-                <h2>Paint</h2>
-            </div>
-            <div class="proyect-element">
-                <img src="./proyects/googleClone.jpeg" alt="googleClone">
-            </div>
+            </div> -->
+            <a href="https://jaguz78.github.io/Simon-Dice">
+                <div class="proyect-element" id="simon">
+                    <h2>Simon</h2>
+                    <div id="one"></div>
+                    <div id="two"></div>
+                    <div id="three"></div>
+                    <div id="four"></div>
+                </div>
+            </a>
+            <a href="https://jaguz78.github.io/Paint">
+                <div class="proyect-element" id="paint">
+                    <h2>Paint</h2>
+                </div>
+            </a>
+            <a href="https://jaguz78.github.io/Google-Clone/">
+                <div class="proyect-element">
+                    <img src="./proyects/googleClone.jpeg" alt="googleClone">
+                </div>
+            </a>
+            <a href="https://jaguz78.github.io/Avocados">
+                <div class="proyect-element" id="avocados">
+                    <p>Platzi</p><img src="./proyects/platziAvo.png" alt="avocados"><p> Avo</p>
+                </div>
+            </a>
+            <a href="https://evening-reef-22173.herokuapp.com/api/v1/products">
+                <div class="proyect-element" id="API">
+                    <p>API</p>
+                </div>
+            </a>
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
-    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./glider.js"></script>
+    <script src="./particles.js"></script>
 </body>
 </html>
